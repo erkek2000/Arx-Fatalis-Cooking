@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cbbb34snwkekd"]
+
+[ext_resource type="PackedScene" uid="uid://c4toqmpeufvtu" path="res://assets/glowing_campfire_with_stones_coal_and_logs.glb" id="1_m47ar"]
+
+[node name="Campfire" type="Node3D" unique_id=1288849354]
+
+[node name="Sketchfab_Scene" parent="." unique_id=37768335 instance=ExtResource("1_m47ar")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1704518697]
+light_color = Color(1, 0.6431373, 0.23137255, 1)
+omni_range = 7.0

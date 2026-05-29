@@ -1,87 +1,37 @@
 [gd_scene format=3 uid="uid://b7b8q2ody56tv"]
 
 [ext_resource type="PackedScene" uid="uid://csl77ovhjchhn" path="res://assets/food/cooked/Drumstick.fbx" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://bmd6wf7sjlmdm" path="res://scenes/interface.tscn" id="2_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://cbbb34snwkekd" path="res://scenes/campfire.tscn" id="3_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://dqcaf5jm7j3cu" path="res://scenes/character.tscn" id="4_k0juu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0juu"]
+albedo_color = Color(0.23697531, 0.3729225, 0.05815596, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_71j4m"]
+material = SubResource("StandardMaterial3D_k0juu")
+size = Vector2(15, 15)
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_qfnet"]
 
 [node name="World" type="Node3D" unique_id=1659280164]
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=35496084]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14932775, -0.10544014, 1.7508354)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1259847528]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8918576, 2.6617193, 3.0745378)
-light_energy = 16.0
-light_indirect_energy = 16.0
-light_volumetric_fog_energy = 1.91
 
 [node name="WorldObjects" type="Node3D" parent="." unique_id=1259519568]
 
 [node name="Drumstick" parent="WorldObjects" unique_id=937123978 instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36697292, 0, 0.60294914)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.6209239)
 
-[node name="Control" type="Control" parent="." unique_id=1832504515]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-metadata/_edit_use_anchors_ = true
+[node name="Campfire" parent="WorldObjects" unique_id=1288849354 instance=ExtResource("3_4wyf3")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
-[node name="InventoryPanel" type="Panel" parent="Control" unique_id=654091105]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.85339504
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
-metadata/_edit_use_anchors_ = true
+[node name="Interface" parent="." unique_id=2094799520 instance=ExtResource("2_rwgxs")]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/InventoryPanel" unique_id=418534525]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
+[node name="Character" parent="." unique_id=883377523 instance=ExtResource("4_k0juu")]
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/InventoryPanel/VBoxContainer" unique_id=2057904044]
-layout_mode = 2
-size_flags_vertical = 3
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1166487809]
 
-[node name="Button" type="Button" parent="Control/InventoryPanel/VBoxContainer/HBoxContainer" unique_id=1443103148]
-layout_mode = 2
-size_flags_horizontal = 3
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=423162450]
+mesh = SubResource("PlaneMesh_71j4m")
 
-[node name="Button2" type="Button" parent="Control/InventoryPanel/VBoxContainer/HBoxContainer" unique_id=809802965]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Button3" type="Button" parent="Control/InventoryPanel/VBoxContainer/HBoxContainer" unique_id=417609730]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Button4" type="Button" parent="Control/InventoryPanel/VBoxContainer/HBoxContainer" unique_id=223099777]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="Control/InventoryPanel/VBoxContainer" unique_id=1740918316]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Button" type="Button" parent="Control/InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=648245155]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Button2" type="Button" parent="Control/InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=834166521]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Button3" type="Button" parent="Control/InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=1064213032]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Button4" type="Button" parent="Control/InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=1826123486]
-layout_mode = 2
-size_flags_horizontal = 3
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1398744724]
+shape = SubResource("WorldBoundaryShape3D_qfnet")

@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://bmd6wf7sjlmdm"]
+
+[ext_resource type="Script" uid="uid://bndllqybf36t" path="res://scripts/interface.gd" id="1_tg63u"]
+
+[node name="Control" type="Control" unique_id=2094799520]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_tg63u")
+metadata/_edit_use_anchors_ = true
+
+[node name="InventoryPanel" type="Panel" parent="." unique_id=677106280]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.85339504
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InventoryPanel" unique_id=136320840]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InventoryPanel/VBoxContainer" unique_id=739892593]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer" unique_id=937522699]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+
+[node name="Button2" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer" unique_id=1640316139]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+
+[node name="Button3" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer" unique_id=1928327728]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+
+[node name="Button4" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer" unique_id=1525969161]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="InventoryPanel/VBoxContainer" unique_id=1617971817]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=1074490218]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+
+[node name="Button2" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=1790894534]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+
+[node name="Button3" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=2044322442]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+
+[node name="Button4" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=1334994666]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
