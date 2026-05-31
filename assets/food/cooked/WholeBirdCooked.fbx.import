@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cdko7omio44mc"
-path="res://.godot/imported/WholeBird.fbx-0dbf51a1737531d110c7d85cfb738efa.scn"
+path="res://.godot/imported/WholeBirdCooked.fbx-a54f5258188a8a8aec917758dc8056b6.scn"
 
 [deps]
 
-source_file="res://assets/food/cooked/WholeBird.fbx"
-dest_files=["res://.godot/imported/WholeBird.fbx-0dbf51a1737531d110c7d85cfb738efa.scn"]
+source_file="res://assets/food/cooked/WholeBirdCooked.fbx"
+dest_files=["res://.godot/imported/WholeBirdCooked.fbx-a54f5258188a8a8aec917758dc8056b6.scn"]
 
 [params]
 

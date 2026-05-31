@@ -1,11 +1,43 @@
 [gd_scene format=3 uid="uid://cbbb34snwkekd"]
 
-[ext_resource type="PackedScene" uid="uid://c4toqmpeufvtu" path="res://assets/glowing_campfire_with_stones_coal_and_logs.glb" id="1_m47ar"]
+[ext_resource type="Script" uid="uid://bghrjp4fn2fuy" path="res://scripts/campfire.gd" id="1_54scn"]
+[ext_resource type="PackedScene" uid="uid://c4toqmpeufvtu" path="res://assets/campfire/glowing_campfire_with_stones_coal_and_logs.glb" id="1_m47ar"]
+[ext_resource type="Script" uid="uid://btj8tkkqt5wx1" path="res://scripts/campfire_light.gd" id="3_8pk5p"]
+[ext_resource type="Script" uid="uid://wtasgrncm1lw" path="res://scripts/cooking_area.gd" id="3_yfrnb"]
 
-[node name="Campfire" type="Node3D" unique_id=1288849354]
+[sub_resource type="SphereShape3D" id="SphereShape3D_54scn"]
+radius = 0.9238868
+
+[node name="Campfire" type="MeshInstance3D" unique_id=1576185048]
+cast_shadow = 0
+script = ExtResource("1_54scn")
+color_hot = Color(0.8954349, 0.5395614, 0.047786452, 1)
 
 [node name="Sketchfab_Scene" parent="." unique_id=37768335 instance=ExtResource("1_m47ar")]
 
+[node name="Ground_Ground_0" parent="Sketchfab_Scene/Sketchfab_model/0256327877604cf290a0006195c054d3_fbx/RootNode/Ground" parent_id_path=PackedInt32Array(37768335, 1190909385) index="0" unique_id=962829415]
+cast_shadow = 0
+
+[node name="Ground Pieces_Ground Pieces_0" parent="Sketchfab_Scene/Sketchfab_model/0256327877604cf290a0006195c054d3_fbx/RootNode/Ground Pieces" parent_id_path=PackedInt32Array(37768335, 1386212634) index="0" unique_id=1173041096]
+cast_shadow = 0
+
+[node name="Logs_Logs_0" parent="Sketchfab_Scene/Sketchfab_model/0256327877604cf290a0006195c054d3_fbx/RootNode/Logs" parent_id_path=PackedInt32Array(37768335, 1210409892) index="0" unique_id=1706329608]
+cast_shadow = 0
+
+[node name="Stones_Stones_0" parent="Sketchfab_Scene/Sketchfab_model/0256327877604cf290a0006195c054d3_fbx/RootNode/Stones" parent_id_path=PackedInt32Array(37768335, 1052642363) index="0" unique_id=1817724918]
+cast_shadow = 0
+
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1704518697]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3680371, 0)
 light_color = Color(1, 0.6431373, 0.23137255, 1)
-omni_range = 7.0
+shadow_enabled = true
+omni_range = 14.0
+script = ExtResource("3_8pk5p")
+
+[node name="CookingArea" type="Area3D" parent="." unique_id=1731188645]
+script = ExtResource("3_yfrnb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CookingArea" unique_id=1052484196]
+shape = SubResource("SphereShape3D_54scn")
+
+[editable path="Sketchfab_Scene"]

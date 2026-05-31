@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpbrywo2flo2e"
-path.s3tc="res://.godot/imported/glowing_campfire_with_stones_coal_and_logs_2.png-5320d776f4781a2855e8c2d56e459131.s3tc.ctex"
+uid="uid://u1qly1w3jlvf"
+path.s3tc="res://.godot/imported/glowing_campfire_with_stones_coal_and_logs_11.png-a612afb10baa6e5a30fa331b4186863a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "b5e17771bcb88256afa79bb9668efe91"
+"md5": "fc24d512a18e99533744ea45159972bd"
 }
 
 [deps]
 
-source_file="res://assets/glowing_campfire_with_stones_coal_and_logs_2.png"
-dest_files=["res://.godot/imported/glowing_campfire_with_stones_coal_and_logs_2.png-5320d776f4781a2855e8c2d56e459131.s3tc.ctex"]
+source_file="res://assets/campfire/glowing_campfire_with_stones_coal_and_logs_11.png"
+dest_files=["res://.godot/imported/glowing_campfire_with_stones_coal_and_logs_11.png-a612afb10baa6e5a30fa331b4186863a.s3tc.ctex"]
 
 [params]
 
@@ -30,7 +30,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://assets/glowing_campfire_with_stones_coal_and_logs_2.png"
+roughness/src_normal="res://assets/glowing_campfire_with_stones_coal_and_logs_11.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

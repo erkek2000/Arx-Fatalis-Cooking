@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b4s3t03o0jh6a"]
+
+[ext_resource type="Script" uid="uid://chj775oly8fcs" path="res://scripts/food_item.gd" id="1_2m5y7"]
+[ext_resource type="AudioStream" uid="uid://dqfeqhj5bhtce" path="res://assets/cookingSound.mp3" id="2_hluqm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hluqm"]
+size = Vector3(0.8, 0.8, 0.8)
+
+[node name="FoodItem" type="RigidBody3D" unique_id=1022909207]
+script = ExtResource("1_2m5y7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2000810720]
+shape = SubResource("BoxShape3D_hluqm")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=722264223]
+stream = ExtResource("2_hluqm")
+parameters/looping = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=51686130]

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nyn4f2av7tqp"
-path.s3tc="res://.godot/imported/glowing_campfire_with_stones_coal_and_logs_7.png-a8c5cd75bcada57f840788d4bb464102.s3tc.ctex"
+uid="uid://65iiloei0p6r"
+path.s3tc="res://.godot/imported/glowing_campfire_with_stones_coal_and_logs_10.png-52ac694b027af38044195d738be9c106.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "e031a5178d1285677d9a25f559859ab0"
+"md5": "0aba2d2f911d4a7b20d1fcaeb99ea01a"
 }
 
 [deps]
 
-source_file="res://assets/glowing_campfire_with_stones_coal_and_logs_7.png"
-dest_files=["res://.godot/imported/glowing_campfire_with_stones_coal_and_logs_7.png-a8c5cd75bcada57f840788d4bb464102.s3tc.ctex"]
+source_file="res://assets/campfire/glowing_campfire_with_stones_coal_and_logs_10.png"
+dest_files=["res://.godot/imported/glowing_campfire_with_stones_coal_and_logs_10.png-52ac694b027af38044195d738be9c106.s3tc.ctex"]
 
 [params]
 

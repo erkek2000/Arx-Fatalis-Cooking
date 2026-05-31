@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bu01rmiufnef5"
-path="res://.godot/imported/FishFillet.fbx-0721dc92265f22b80dcf0c67d88d6005.scn"
+uid="uid://csl77ovhjchhn"
+path="res://.godot/imported/DrumstickCooked.fbx-cf405517d1a7e1371da771a8cb36ab96.scn"
 
 [deps]
 
-source_file="res://assets/food/raw/FishFillet.fbx"
-dest_files=["res://.godot/imported/FishFillet.fbx-0721dc92265f22b80dcf0c67d88d6005.scn"]
+source_file="res://assets/food/cooked/DrumstickCooked.fbx"
+dest_files=["res://.godot/imported/DrumstickCooked.fbx-cf405517d1a7e1371da771a8cb36ab96.scn"]
 
 [params]
 
