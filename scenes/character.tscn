@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://dqcaf5jm7j3cu"]
 
-[ext_resource type="Script" uid="uid://bqpk123xj2ohk" path="res://scripts/character_body_3d.gd" id="1_agfs1"]
+[ext_resource type="Script" uid="uid://bqpk123xj2ohk" path="res://scripts/player.gd" id="1_agfs1"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_agfs1"]
 radius = 0.2590332
 height = 0.5180664
 
-[node name="CharacterBody3D" type="CharacterBody3D" unique_id=883377523]
+[node name="Player" type="CharacterBody3D" unique_id=883377523]
 script = ExtResource("1_agfs1")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1904782913]
