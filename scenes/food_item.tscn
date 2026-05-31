@@ -2,18 +2,77 @@
 
 [ext_resource type="Script" uid="uid://chj775oly8fcs" path="res://scripts/food_item.gd" id="1_2m5y7"]
 [ext_resource type="AudioStream" uid="uid://dqfeqhj5bhtce" path="res://assets/cookingSound.mp3" id="2_hluqm"]
+[ext_resource type="PackedScene" uid="uid://dtry1fxqk50kt" path="res://assets/food/raw/DrumstickRaw.fbx" id="3_s2txt"]
+[ext_resource type="PackedScene" uid="uid://bu01rmiufnef5" path="res://assets/food/raw/FishFilletRaw.fbx" id="4_ri1ru"]
+[ext_resource type="PackedScene" uid="uid://cp5ojjkq60lg0" path="res://assets/food/raw/SteakRaw.fbx" id="5_ft6pe"]
+[ext_resource type="PackedScene" uid="uid://gnpp22e78u25" path="res://assets/food/raw/WholeBirdRaw.fbx" id="6_b5pdv"]
+[ext_resource type="PackedScene" uid="uid://csl77ovhjchhn" path="res://assets/food/cooked/DrumstickCooked.fbx" id="7_jn4fw"]
+[ext_resource type="PackedScene" uid="uid://ddu15myvkhgk" path="res://assets/food/cooked/FishFilletCooked.fbx" id="8_w0xwd"]
+[ext_resource type="PackedScene" uid="uid://drd6fsm611fr2" path="res://assets/food/cooked/SteakCooked.fbx" id="9_b0do5"]
+[ext_resource type="PackedScene" uid="uid://cdko7omio44mc" path="res://assets/food/cooked/WholeBirdCooked.fbx" id="10_bgyha"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s2txt"]
+radius = 0.21728516
+height = 1.3618164
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hluqm"]
-size = Vector3(0.8, 0.8, 0.8)
+size = Vector3(0.4744751, 0.10506897, 0.20637207)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w0xwd"]
+size = Vector3(0.49780273, 0.10272217, 0.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s2txt"]
+size = Vector3(1.3417969, 0.61157227, 1)
 
 [node name="FoodItem" type="RigidBody3D" unique_id=1022909207]
 script = ExtResource("1_2m5y7")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2000810720]
+[node name="CollisionShapeDrumstick" type="CollisionShape3D" parent="." unique_id=2000810720]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.0039352477, -2.5718863e-09, 0)
+visible = false
+shape = SubResource("CapsuleShape3D_s2txt")
+
+[node name="CollisionShapeFishFillet" type="CollisionShape3D" parent="." unique_id=610747661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09160769, 0.007911697, 0.007141106)
+visible = false
 shape = SubResource("BoxShape3D_hluqm")
+
+[node name="CollisionShapeSteak" type="CollisionShape3D" parent="." unique_id=1985221812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008569345, -0.069244385, 0)
+visible = false
+shape = SubResource("BoxShape3D_w0xwd")
+
+[node name="CollisionShapeWholeBird" type="CollisionShape3D" parent="." unique_id=835225432]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17089844, 0.049194336, 0)
+visible = false
+shape = SubResource("BoxShape3D_s2txt")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=722264223]
 stream = ExtResource("2_hluqm")
 parameters/looping = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=51686130]
+
+[node name="DrumstickRaw" parent="." unique_id=1764520423 instance=ExtResource("3_s2txt")]
+visible = false
+
+[node name="FishFilletRaw" parent="." unique_id=1209321587 instance=ExtResource("4_ri1ru")]
+visible = false
+
+[node name="SteakRaw" parent="." unique_id=488380206 instance=ExtResource("5_ft6pe")]
+visible = false
+
+[node name="WholeBirdRaw" parent="." unique_id=781172746 instance=ExtResource("6_b5pdv")]
+visible = false
+
+[node name="DrumstickCooked" parent="." unique_id=914060365 instance=ExtResource("7_jn4fw")]
+visible = false
+
+[node name="FishFilletCooked" parent="." unique_id=1991726353 instance=ExtResource("8_w0xwd")]
+visible = false
+
+[node name="SteakCooked" parent="." unique_id=1888425517 instance=ExtResource("9_b0do5")]
+visible = false
+
+[node name="WholeBirdCooked" parent="." unique_id=1103492416 instance=ExtResource("10_bgyha")]
+visible = false

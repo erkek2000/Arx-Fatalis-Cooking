@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://bmd6wf7sjlmdm" path="res://scenes/interface.tscn" id="2_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://cbbb34snwkekd" path="res://scenes/campfire.tscn" id="3_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://b4s3t03o0jh6a" path="res://scenes/food_item.tscn" id="3_i7141"]
-[ext_resource type="PackedScene" uid="uid://cp5ojjkq60lg0" path="res://assets/food/raw/SteakRaw.fbx" id="4_i7141"]
 [ext_resource type="PackedScene" uid="uid://dqcaf5jm7j3cu" path="res://scenes/character.tscn" id="4_k0juu"]
 [ext_resource type="PackedScene" uid="uid://brnojnn8mycin" path="res://assets/grass.glb" id="5_qfnet"]
 
@@ -79,7 +78,7 @@ energy_max = 12.8
 
 [node name="FoodItem" parent="WorldObjects" unique_id=1022909207 instance=ExtResource("3_i7141")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18210351, 1.234744)
-raw_scene = ExtResource("4_i7141")
+food_type = 2
 
 [node name="Interface" parent="." unique_id=2094799520 instance=ExtResource("2_rwgxs")]
 
