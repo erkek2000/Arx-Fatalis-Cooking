@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bndllqybf36t" path="res://scripts/interface.gd" id="1_tg63u"]
 
-[node name="Control" type="Control" unique_id=2094799520]
+[node name="Interface" type="Control" unique_id=2094799520]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -302,3 +303,6 @@ custom_minimum_size = Vector2(100, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 28
 text = "Quit"
+
+[connection signal="pressed" from="PauseMenu/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="PauseMenu/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
