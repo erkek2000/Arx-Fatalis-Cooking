@@ -18,6 +18,9 @@ size = Vector2(100, 100)
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_qfnet"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i7141"]
+albedo_color = Color(0.14117648, 0.62352943, 0.0627451, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ywchj"]
 resource_name = "Material.001"
 cull_mode = 2
@@ -95,6 +98,7 @@ mesh = SubResource("PlaneMesh_71j4m")
 shape = SubResource("WorldBoundaryShape3D_qfnet")
 
 [node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="ground" unique_id=1949393153]
+material_override = SubResource("StandardMaterial3D_i7141")
 gi_mode = 2
 multimesh = SubResource("MultiMesh_71j4m")
 
