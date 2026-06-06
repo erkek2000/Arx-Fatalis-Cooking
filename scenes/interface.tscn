@@ -11,71 +11,263 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 script = ExtResource("1_tg63u")
-metadata/_edit_use_anchors_ = true
 
-[node name="InventoryPanel" type="Panel" parent="." unique_id=677106280]
+[node name="InventoryPanel" type="PanelContainer" parent="." unique_id=944505574]
 layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.85339504
-anchor_right = 1.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -268.0
+offset_top = -158.0
+offset_right = 268.0
 grow_horizontal = 2
 grow_vertical = 0
-metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="InventoryPanel" unique_id=136320840]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="InventoryPanel/VBoxContainer" unique_id=739892593]
+[node name="ScrollContainer" type="ScrollContainer" parent="InventoryPanel" unique_id=1251144905]
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="Button" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer" unique_id=937522699]
+[node name="Inventory" type="GridContainer" parent="InventoryPanel/ScrollContainer" unique_id=173183841]
 layout_mode = 2
-size_flags_horizontal = 3
-focus_mode = 0
+columns = 10
 
-[node name="Button2" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer" unique_id=1640316139]
+[node name="Button" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1389291735]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-focus_mode = 0
 
-[node name="Button3" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer" unique_id=1928327728]
+[node name="Button2" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=383571444]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-focus_mode = 0
 
-[node name="Button4" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer" unique_id=1525969161]
+[node name="Button3" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=381827493]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-focus_mode = 0
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="InventoryPanel/VBoxContainer" unique_id=1617971817]
+[node name="Button4" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1902845555]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="Button" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=1074490218]
+[node name="Button5" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1622778259]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-focus_mode = 0
 
-[node name="Button2" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=1790894534]
+[node name="Button6" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1964935866]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-focus_mode = 0
 
-[node name="Button3" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=2044322442]
+[node name="Button7" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=14412240]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-focus_mode = 0
 
-[node name="Button4" type="Button" parent="InventoryPanel/VBoxContainer/HBoxContainer2" unique_id=1334994666]
+[node name="Button8" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=351068250]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-focus_mode = 0
+
+[node name="Button9" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=713876990]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button10" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1748791704]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button11" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1336798368]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button12" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1165456358]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button13" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1350677928]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button14" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=214203283]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button15" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=451937314]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button16" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=992511243]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button17" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=263967458]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button18" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=162580775]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button19" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=127820599]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button20" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=995617126]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button21" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=959192330]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button22" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=622779852]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button23" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1876299658]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button24" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1139299708]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button25" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1096994816]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button26" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=562703112]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button27" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1306448969]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button28" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=241164759]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button29" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1130651959]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button30" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1781693756]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button31" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1661491902]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button32" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1438689316]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button33" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1881009366]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button34" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1557561420]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button35" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1857969918]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button36" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=904554129]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button37" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1090942058]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button38" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=971918273]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button39" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=721652001]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button40" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=2141547734]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button41" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1183649109]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button42" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1802843466]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button43" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1153709053]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button44" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=452265644]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button45" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1432219558]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button46" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=858117388]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button47" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1295832815]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button48" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=857868251]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button49" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=654547027]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button50" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1333041126]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button51" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1786292113]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button52" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1563945352]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button53" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=214562648]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button54" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=690086139]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button55" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=862863953]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button56" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=339211251]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button57" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1317270630]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button58" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1288841710]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button59" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=539583123]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="Button60" type="Button" parent="InventoryPanel/ScrollContainer/Inventory" unique_id=1474786770]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2

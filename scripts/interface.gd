@@ -3,7 +3,6 @@ extends Control
 
 @onready var inventory_panel: Control = $InventoryPanel
 
-
 func _ready() -> void:
 	inventory_panel.visible = false
 
